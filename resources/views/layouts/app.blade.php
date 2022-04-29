@@ -15,6 +15,9 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <!--favicon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -83,6 +86,9 @@
         </main>
     </div>
     @include('sweetalert::alert')
+
+    <!--Bootstrap-->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
