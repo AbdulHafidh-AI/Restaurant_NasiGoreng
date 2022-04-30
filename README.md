@@ -53,7 +53,7 @@
     
 <hr>
     
- ### LISENCE ⚠️
+ ### LICENSE ⚠️
    <p> Source Code ini hanya sebatas media pembelajaran saja. Produk ini tidak diperkenankan untuk diperjualbelikan 😠 </p>
 
   
