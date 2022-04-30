@@ -69,6 +69,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'role' => 'user',
         ]);
     }
 
@@ -77,11 +78,6 @@ class RegisterController extends Controller
      * @param  \Illuminate\Http\Request  $request
      */
     public function registerAsAdmin(Request $request){
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
 
         $user = User::create([
             'name' => $request->name,
@@ -90,6 +86,6 @@ class RegisterController extends Controller
             'role' => 'admin',
         ]);
 
-        return redirect()->route('admin.index');
+        return redirect()->route('auth.login');
     }
 }

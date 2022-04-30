@@ -26,11 +26,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    /**
-     * Halaman Admin
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function admin(){
-        return view('admin.index');
-    }
+   
 }

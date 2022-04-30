@@ -69,9 +69,15 @@
                             </div>
                         </div>
                     </form>
+
+                    
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+<br>
+<!-- Register as Admin -->
+
 @endsection
