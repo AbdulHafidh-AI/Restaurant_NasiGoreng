@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PesananController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 
 /*
@@ -35,6 +36,8 @@ Route::post('/login-admin', [AdminController::class, 'loginAsAdmin'])->name('log
 Route::get('/adminpage', [AdminController::class, 'index'])->name('adminpage');
 
 // Ke halaman Pesan
-Route::get('/pesan', [HomeController::class, 'pesanan'])->name('pesan');
+Route::get('/pesan', [PesananController::class, 'index'])->name('pesan');
+// Memesan makanan
+Route::post('/pesan', [PesananController::class, 'store'])->name('pesan');
 
 

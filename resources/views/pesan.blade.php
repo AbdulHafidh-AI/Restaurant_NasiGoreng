@@ -15,10 +15,10 @@
 
     <div class="container mb-5"> 
          <!-- Make Form to order nasi goreng -->
-    <form action="pesan" method="POST">
+    <form action="/pesan" method="POST">
         @csrf
         <div class="form-floating">
-            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="nama_pesanan">
               <option selected>Nasi Goreng Special</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -26,11 +26,58 @@
             </select>
             <label for="floatingSelect">Pilih Menu Yang anda inginkan </label>
           </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Jumlah" name="total" required>
+            <!--Button-->
+            <div class="text-end">
+                <button type="submit" class="btn btn-dark btn-lg btn-block">Pesan</button>
+            </div>
+        </div>
       </form>
     </div>
-   
 
-
+    <!-- Tabel Pesanan -->
+    <div class="container mb-5">
+        <div class="table-responsive">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Pesanan</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @php
+                        $row = 1;
+                  @endphp
+                
+                    @foreach ($pesanan as $pesan)
+                        
+                    
+                    <tr>
+                        <th scope="row">{{ $row }}</th>
+                        <td>{{ $pesan->nama_pesanan }}</td>
+                        <td>{{ $pesan->total }}</td>
+                        @if ($pesan->status == 0)
+                            <td>Belum Siap</td>
+                            
+                        @else
+                        <td>Sudah siap</td>
+                        @endif
+                        
+                    </tr>
+                    @php
+                        $row++;
+                    @endphp
+                    @endforeach
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 
       <!-- Footer-->
