@@ -34,4 +34,7 @@ Route::post('/login-admin', [AdminController::class, 'loginAsAdmin'])->name('log
 // Ke halaman admin
 Route::get('/adminpage', [AdminController::class, 'index'])->name('adminpage');
 
+// Ke halaman Pesan
+Route::get('/pesan', [HomeController::class, 'pesanan'])->name('pesan');
+
 
