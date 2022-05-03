@@ -30,6 +30,7 @@
             </div>
         </div>
     </div>
+</section>
 
 
 <!-- Footer-->
