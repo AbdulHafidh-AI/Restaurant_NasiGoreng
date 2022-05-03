@@ -52,10 +52,12 @@
                     @php
                         $row = 1;
                   @endphp
+
                 
                     @foreach ($pesanan as $pesan)
                         
-                    
+                    <!-- Menampilkan pesanan sesuai dengan user yang login -->
+                    @if ($pesan->user_id == Auth::user()->id)
                     <tr>
                         <th scope="row">{{ $row }}</th>
                         <td>{{ $pesan->nama_pesanan }}</td>
@@ -68,6 +70,8 @@
                         @endif
                         
                     </tr>
+                    @endif
+
                     @php
                         $row++;
                     @endphp
