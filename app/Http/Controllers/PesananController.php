@@ -28,8 +28,10 @@ class PesananController extends Controller
     public function index()
     {
         $pesanan = Order::all();
+        $menu = DB::table('table_menu')->get();
         return view('pesan',[
-            'pesanan' => $pesanan
+            'pesanan' => $pesanan,
+            'menu' => $menu
         ]);
     }
 

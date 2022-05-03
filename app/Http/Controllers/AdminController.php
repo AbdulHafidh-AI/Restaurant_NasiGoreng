@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -69,5 +71,28 @@ class AdminController extends Controller
         }
 
         Alert::error('Gagal', 'Email atau password salah');
+    }
+
+    public function loginToAdmin(){
+        return view('admin.login');
+    }
+
+    public function registerAdmin(){
+        return view('admin.register');
+    }
+
+    public function pesananAdmin(){
+        return view('admin.pesanan',[
+            'pesanan' => Order::all()
+        ]);
+    }
+
+    public function konfirmasi($id){
+        $pesanan = Order::find($id);
+        $pesanan->status = true;
+        $pesanan->save();
+
+        Alert::success('Pesanan Berhasil', 'Terima Kasih');
+        return redirect()->route('pesananAdmin');
     }
 }

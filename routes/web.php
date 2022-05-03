@@ -34,10 +34,17 @@ Route::post('/login-admin', [AdminController::class, 'loginAsAdmin'])->name('log
 
 // Ke halaman admin
 Route::get('/adminpage', [AdminController::class, 'index'])->name('adminpage');
+Route::get('/loginToAdmin', [AdminController::class, 'loginToAdmin'])->name('loginToAdmin');
+Route::get('/registerAdmin', [AdminController::class, 'registerAdmin'])->name('registerAdmin');
+Route::get('/pesananAdmin', [AdminController::class, 'pesananAdmin'])->name('pesananAdmin');
+// Konfirmasi dari Admin
+Route::post('/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi');
 
 // Ke halaman Pesan
 Route::get('/pesan', [PesananController::class, 'index'])->name('pesan');
 // Memesan makanan
 Route::post('/pesan', [PesananController::class, 'store'])->name('pesan');
+
+
 
 

@@ -20,9 +20,10 @@
         <div class="form-floating">
             <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="nama_pesanan">
               <option selected>Nasi Goreng Special</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              @foreach ($menu as $m)
+              <option>{{ $m->nama }}</option>
+              @endforeach
+             
             </select>
             <label for="floatingSelect">Pilih Menu Yang anda inginkan </label>
           </div>
@@ -86,7 +87,7 @@
 
       <!-- Footer-->
 <footer class="py-5 bg-dark">
-    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Restaurant Nasi Goreng</p></div>
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; FRECE</p></div>
 </footer>
       
 @endsection
