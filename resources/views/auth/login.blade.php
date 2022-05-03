@@ -64,14 +64,20 @@
                                 @endif
                             </div>
                         </div>
+                            <!-- Button trigger modal -->
+                            <a href="/adminpage"> <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Login As Admin
+                            </button> </a>
+                            
+                        </div>
+
+                        
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<br>
-<!-- Login As Admin -->
 
 @endsection

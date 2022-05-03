@@ -87,8 +87,9 @@
     </div>
     @include('sweetalert::alert')
 
-    <!--Bootstrap-->
+    <!--Bootstrap Js-->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/js/popper.min.js"></script>
 
 </body>
 </html>

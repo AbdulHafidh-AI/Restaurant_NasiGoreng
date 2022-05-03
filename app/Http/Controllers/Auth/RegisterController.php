@@ -73,19 +73,5 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Daftar sebagai admin
-     * @param  \Illuminate\Http\Request  $request
-     */
-    public function registerAsAdmin(Request $request){
-
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-            'role' => 'admin',
-        ]);
-
-        return redirect()->route('auth.login');
-    }
+    
 }

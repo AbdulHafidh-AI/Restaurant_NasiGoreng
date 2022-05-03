@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -26,7 +27,11 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Register as admin
-Route::post('/register-admin', [RegisterController::class, 'registerAsAdmin'])->name('register-admin');
+Route::post('/register-admin', [AdminController::class, 'registerAsAdmin'])->name('register-admin');
 // Login as admin
-Route::post('/login-admin', [LoginController::class, 'loginAsAdmin'])->name('login-admin');
+Route::post('/login-admin', [AdminController::class, 'loginAsAdmin'])->name('login-admin');
+
+// Ke halaman admin
+Route::get('/adminpage', [AdminController::class, 'index'])->name('adminpage');
+
 
