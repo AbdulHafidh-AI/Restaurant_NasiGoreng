@@ -46,6 +46,13 @@ class AdminController extends Controller
      */
     public function registerAsAdmin(Request $request){
 
+       // Check if email is duplicate
+       $hasil = DB::table('users')->where('email', $request->email)->count();
+
+         if($hasil > 0){
+                Alert::error('Email sudah digunakan');
+                return redirect('registerAdmin');
+         }
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -53,7 +60,8 @@ class AdminController extends Controller
             'role' => 'admin',
         ]);
 
-        return redirect()->route('auth.login');
+      
+        return redirect('pesananAdmin');
     }
 
     /**
@@ -67,7 +75,7 @@ class AdminController extends Controller
         ]);
 
         if (auth()->attempt(['email' => $request->email, 'password' => $request->password, 'role' => 'admin'])) {
-            return redirect()->route('admin.pesanan');
+            return redirect('pesananAdmin');
         }
 
         Alert::error('Gagal', 'Email atau password salah');

@@ -66,6 +66,8 @@
     <!--Bootstrap Js-->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src="/bootstrap/js/popper.min.js"></script>
+    <!-- Sweetalert2 -->
+    @include('sweetalert::alert')
 </body>
 
 </html>

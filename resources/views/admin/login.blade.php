@@ -5,6 +5,7 @@
 <div class="container">
 
     <form action="login-admin" method="POST">
+        @csrf
         <!-- Email -->
         <div class="form-group">
             <label for="email">Email</label>
