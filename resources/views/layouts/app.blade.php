@@ -87,6 +87,11 @@
     </div>
     @include('sweetalert::alert')
 
+ <!-- Footer-->
+<footer class="py-5 bg-dark mt-auto">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Restaurant Nasi Goreng</p></div>
+</footer>
+
     <!--Bootstrap Js-->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src="/bootstrap/js/popper.min.js"></script>

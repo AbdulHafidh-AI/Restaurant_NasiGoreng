@@ -33,7 +33,7 @@
 
 
 <!-- Footer-->
-<footer class="py-5 bg-dark">
-    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Restaurant Nasi Goreng</p></div>
+<footer class="py-5 bg-dark mt-auto">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; FRECE 2022</p></div>
 </footer>
 @endsection

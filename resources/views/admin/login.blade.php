@@ -22,11 +22,4 @@
         </div>
     </form>
 </div>
-
-
-
-
-
-
-    
 @endsection
