@@ -33,12 +33,17 @@ Route::post('/register-admin', [AdminController::class, 'registerAsAdmin'])->nam
 Route::post('/login-admin', [AdminController::class, 'loginAsAdmin'])->name('login-admin');
 
 // Ke halaman admin
-Route::get('/adminpage', [AdminController::class, 'index'])->name('adminpage');
-Route::get('/loginToAdmin', [AdminController::class, 'loginToAdmin'])->name('loginToAdmin');
-Route::get('/registerAdmin', [AdminController::class, 'registerAdmin'])->name('registerAdmin');
-Route::get('/pesananAdmin', [AdminController::class, 'pesananAdmin'])->name('pesananAdmin');
-// Konfirmasi dari Admin
-Route::post('/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi');
+Route::group(['middleware' => 'guest'], function () {
+    Route::get('/adminpage', [AdminController::class, 'index'])->name('adminpage');
+    Route::get('/loginToAdmin', [AdminController::class, 'loginToAdmin'])->name('loginToAdmin');
+    Route::get('/registerAdmin', [AdminController::class, 'registerAdmin'])->name('registerAdmin');
+    Route::get('/pesananAdmin', [AdminController::class, 'pesananAdmin'])->name('pesananAdmin');
+    // Konfirmasi dari Admin
+    Route::post('/konfirmasi/{id}', [AdminController::class, 'konfirmasi'])->name('konfirmasi');
+    // LogoutAdmin
+    Route::get('/logoutAdmin', [AdminController::class, 'logoutAdmin'])->name('logoutAdmin');
+});
+
 
 // Ke halaman Pesan
 Route::get('/pesan', [PesananController::class, 'index'])->name('pesan');

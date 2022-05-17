@@ -19,8 +19,7 @@
         <div class="container">
             <!-- Navbar brand -->
             <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                <img src="assets/nasi-goreng.png" height="16" alt="MDB Logo"
-                    loading="lazy" style="margin-top: -1px;" />
+                <img src="assets/nasi-goreng.png" height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
             </a>
 
             <!-- Toggle button -->
@@ -42,25 +41,26 @@
 
                 <div class="d-flex align-items-center">
                     <a href="loginToAdmin"> <button type="button" class="btn btn-link px-3 me-2">
-                        Login
-                    </button> </a>
-                    <a href="registerAdmin">   <button type="button" class="btn btn-primary me-3">
-                        Registrasi Admin
-                      </button></a>
-                  
-                    <a
-          class="btn btn-dark px-3"
-          href="/"
-          role="button"
-          ><i class="fab fa-github"></i
-        >Guest Page</a>
+                            Login
+                        </button> </a>
+                    <a href="registerAdmin"> <button type="button" class="btn btn-primary me-3">
+                            Registrasi Admin
+                        </button></a>
+
+                    <a class="btn btn-dark px-3" href="/" role="button">
+                        <i class="fas fa-home"></i>
+                        >Guest Page</a>
+
+                    <a href="logoutAdmin"> <button type="button" class="btn btn-danger me-3 px-3">
+                            Logout
+                        </button></a>
                 </div>
             </div>
             <!-- Collapsible wrapper -->
         </div>
         <!-- Container wrapper -->
     </nav>
-    <!-- Navbar -->
+    <!-- End Of  Navbar -->
     @yield('content')
 
     <!--Bootstrap Js-->
