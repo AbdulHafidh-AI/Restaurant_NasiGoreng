@@ -39,7 +39,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <!-- Product name-->
-                                            <h5 class="fw-bolder">Sale Item</h5>
+                                            <h5 class="fw-bolder">Nasi Goreng Kambing</h5>
                                             <!-- Product price-->
                                             <span class="text-muted text-decoration-line-through">Rp. 50.000</span>
                                             Rp. 25.000
@@ -91,7 +91,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <!-- Product name-->
-                                            <h5 class="fw-bolder">Sale Item</h5>
+                                            <h5 class="fw-bolder">Nasi Goreng Telur</h5>
                                             <!-- Product price-->
                                             <span class="text-muted text-decoration-line-through">RP 50.00</span>
                                             Rp. 25.00
@@ -140,7 +140,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -152,14 +152,14 @@
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <!-- Product name-->
-                                            <h5 class="fw-bolder">Fancy Product</h5>
+                                            <h5 class="fw-bolder">Nasi Goreng Sambal Matah</h5>
                                             <!-- Product price-->
                                             Rp. 10.000 - 35.000
                                         </div>
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <!-- Product name-->
-                                            <h5 class="fw-bolder">Special Item</h5>
+                                            <h5 class="fw-bolder">Nasi Goreng Mentega</h5>
                                             <!-- Product reviews-->
                                             <div class="d-flex justify-content-center small text-warning mb-2">
                                                 <div class="bi-star-fill"></div>
@@ -189,7 +189,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +201,7 @@
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
+                                            <h5 class="fw-bolder">Nasi Goreng Seafood</h5>
                                             <!-- Product reviews-->
                                             <div class="d-flex justify-content-center small text-warning mb-2">
                                                 <div class="bi-star-fill"></div>
@@ -216,7 +216,7 @@
                                     </div>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Pesan</a></div>
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="pesan">Pesan</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -233,3 +233,5 @@
         <i class="fa fa-angle-double-up" aria-hidden="true"></i></span>
     </div>
 @endsection
+
+
